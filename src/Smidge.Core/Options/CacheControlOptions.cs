@@ -1,4 +1,4 @@
-﻿using Smidge.Cache;
+using Smidge.Cache;
 
 namespace Smidge.Options
 {
@@ -7,7 +7,7 @@ namespace Smidge.Options
         public CacheControlOptions()
         {
             EnableETag = true;
-            CacheControlMaxAge = 10 * 24; //10 days
+            CacheControlMaxAge = 365 * 24; //10 days
         }
 
         public bool EnableETag { get; set; }
