@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <StartupObject />
     <IsPackable>true</IsPackable>
-    <Version>4.2.0.1</Version>
+    <Version>4.2.1.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="..\..\assets\logo-nuget.png" Link="logo-nuget.png" Pack="true" PackagePath="" />
