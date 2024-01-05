@@ -191,3 +191,4 @@ src/Smidge.Web/Smidge/*
 test/Smidge.Tests/project.lock.json
 test/Smidge.Benchmarks/BenchmarkDotNet.Artifacts/*
 /.vs/*
+/src/Smidge.Core/Smidge.Core.csproj
