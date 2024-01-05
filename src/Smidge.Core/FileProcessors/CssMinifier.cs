@@ -3,6 +3,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using NUglify;
 
 namespace Smidge.FileProcessors
 {
@@ -30,9 +31,8 @@ namespace Smidge.FileProcessors
         {
             using (var reader = new StringReader(fileProcessContext.FileContent))
             {
-                var cssMin = new CssMin();
-                var minResult = cssMin.Minify(reader);
-                fileProcessContext.Update(minResult);
+                var minResult = Uglify.Css(reader.ReadToEnd());
+                fileProcessContext.Update(minResult.Code);
                 await next(fileProcessContext);
             }
         }
